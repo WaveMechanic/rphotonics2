@@ -7,7 +7,7 @@
 adjust_raw_colnames(raw_section_list)
 }
 \arguments{
-\item{raw_section_list}{}
+\item{raw_section_list}{A list of dataframes with each section}
 }
 \value{
 \code{dataframe}

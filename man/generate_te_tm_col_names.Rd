@@ -7,7 +7,7 @@
 generate_te_tm_col_names(df_te_tm)
 }
 \arguments{
-\item{df_te_tm}{}
+\item{df_te_tm}{A dataframe based only on tm_te pattern}
 }
 \value{
 \code{List}

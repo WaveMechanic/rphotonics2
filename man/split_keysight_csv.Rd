@@ -7,9 +7,9 @@
 split_keysight_csv(raw_data_path, section_delim = "=")
 }
 \arguments{
-\item{raw_data_path}{path to data}
+\item{raw_data_path}{Data path containg data straight from Keysight tool}
 
-\item{section_delim}{section delim}
+\item{section_delim}{How Keysight data is divided within file}
 }
 \value{
 \code{dataframe}

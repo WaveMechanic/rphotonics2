@@ -7,10 +7,10 @@
 generate_section_col_names(df_section)
 }
 \arguments{
-\item{df_section}{}
+\item{df_section}{A dataframe containing sections of data}
 }
 \value{
-\code{List}
+\code{list}
 }
 \description{
 generate names for each column of data

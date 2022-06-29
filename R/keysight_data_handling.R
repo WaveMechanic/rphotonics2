@@ -12,8 +12,8 @@
 #' @importFrom readr read_lines
 #' @importFrom utils read.csv
 #'
-#' @param raw_data_path path to data
-#' @param section_delim section delim
+#' @param raw_data_path Data path containg data straight from Keysight tool
+#' @param section_delim How Keysight data is divided within file
 #'
 #' @return
 #' `dataframe`
@@ -68,10 +68,10 @@ split_keysight_csv <- function(raw_data_path, section_delim = "=") {
 #' For example, the TE/TM section is named with the amount
 #' of fibers observed and modes
 #'
-#' @param df_section
+#' @param df_section A dataframe containing sections of data
 #'
 #' @return
-#' `List`
+#' `list`
 #'
 #' @export
 generate_section_col_names <- function(df_section) {
@@ -98,7 +98,7 @@ generate_section_col_names <- function(df_section) {
 #' For example, the TE/TM section is named with the amount
 #' of fibers observed and modes
 #'
-#' @param df_te_tm
+#' @param df_te_tm A dataframe based only on tm_te pattern
 #'
 #' @return
 #' `List`
@@ -129,7 +129,7 @@ generate_te_tm_col_names <- function(df_te_tm) {
 #' in the raw data file
 #' and names their columns accordingly
 #'
-#' @param raw_section_list
+#' @param raw_section_list A list of dataframes with each section
 #'
 #' @return
 #' `dataframe`

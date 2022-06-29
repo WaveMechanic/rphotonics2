@@ -2,15 +2,27 @@
 % Please edit documentation in R/rphotnics_functions.R
 \name{cut_back_method}
 \alias{cut_back_method}
-\title{Cutback Method}
+\title{Fiber Cutback Method}
 \usage{
-cut_back_method(wg_loss_df, grouping)
+cut_back_method(wg_df, group_sel, ...)
 }
 \arguments{
-\item{wg_loss_df}{This requires a dataframe with \code{lot}, \code{wafer}, \code{lambda}, \code{loss1}, \code{x_y_die}, & \code{dims}}
+\item{wg_df}{Requires \code{list} or \code{data} frame containing columns that describe:
+Wavelengths used
+Losses measured
+Length of Waveguides}
+
+\item{group_sel}{Variable(s) to group to fit by.
+This needs to be a list or single variable name}
+
+\item{...}{Column names to find required data from 'wg_df'.
+Must be in the following order:
+1: Wavelengths
+2: losses
+3: Waveguide Lengths}
 }
 \value{
-\code{dataframe}
+\verb{data table}
 }
 \description{
 Fit Waveguide Insertion Loss
